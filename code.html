@@ -1,0 +1,88 @@
+<HTML>
+<BODY link="#FFFFFF" text="#FFFFFF" vlink="#999999" alink="#00FF00" bgcolor="#000000">
+<CENTER><FONT color="Lime"><BR><BR><BR><BR><BR><BR><BR><BR><BR><FONT face="Times New Roman"><B><H2><BLINK>Gesch&uuml;tzter Bereich!!!</BLINK></H2></B></FONT>
+<SCRIPT>function doBlink() {
+var blink = document.all.tags("BLINK")
+for (var i=0; i < blink.length; i++)
+blink[i].style.visibility = blink[i].style.visibility == "" ? "hidden" : "" 
+}
+
+function startBlink() {
+// Make sure it is IE4
+if (document.all)
+setInterval("doBlink()",1000)
+}
+window.onload = startBlink;
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript"><!-- Begin
+function Login(){
+var done=0;
+var username=document.login.username.value;
+username=username.toLowerCase();
+var password=document.login.password.value;
+password=password.toLowerCase();
+if (username=="fifa8" && password=="t8586") {
+window.location="Text.htm"; done=1;
+}
+if (done==0) { alert("USER ODER PASSWORT FALSCH!!!"); }
+}
+// End -->
+</SCRIPT>
+<SCRIPT type="text/javascript"><!--
+//Dieses Skript stammt von Michael Mailers JavaScripts
+//URL: http://www.webaid.de/js  --  eMail: mm@webaid.de
+//Bitte   entfernen   Sie   diesen   Vermerk   nicht  !
+if (document.layers){
+    window.captureEvents(Event.MOUSEDOWN | Event.MOUSEUP)
+    window.onmousedown=rightclick;
+    window.onmouseup=rightclick;
+
+    function rightclick(e) {
+    if (e.which == 3) {
+    // Put right mouse code here
+    alert('Sorry: Diese Funktion ist deaktiviert.');
+    return false;
+    }
+    else {
+        return true;
+        }
+    }
+}
+if (document.all){
+    function click() {
+    if (event.button==2) {
+    alert('Sorry: Diese Funktion ist deaktiviert.')
+    }
+
+    if (event.button==3) {
+    alert('Sorry: Diese Funktion ist deaktiviert.')}
+    }
+    document.onmousedown=click
+}
+// -->
+</SCRIPT>
+<FORM name="login">
+	<TABLE width="225" border="11" cellpadding="1">
+		<TR>
+			<TD><B>Username:
+			</TD>
+			<TD>
+				<INPUT type="text" name="username"></B>
+			</TD>
+		</TR>
+		<TR>
+			<TD><B>Password:
+			</TD>
+			<TD>
+				<INPUT type="text" name="password"></B>
+			</TD>
+		</TR>
+		<TR>
+			<TD colspan="2" align="center">
+				<INPUT type="button" value="Login!" onClick="Login()">
+			</TD>
+		</TR>
+	</TABLE>
+</FORM><FONT face="Times New Roman"><A href="mailto:Waechter@gmx.at"><B><H4 align="center">Zugangsdaten per Mail anfordern!!!</H4></A></FONT></CENTER>
+</BODY>
+</HTML>
