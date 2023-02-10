@@ -1,0 +1,72 @@
+<html>
+<head>  
+<title>Waechter's Site</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript1.2">
+var nachricht="Willkommen auf Waechter's Site!"     //Seitentitel
+var nachricht=nachricht+"          " //macht am Schlu&szlig; eine Pause,ein Leerzeichen=1 geschwindigkeit unit, 10 Leerzeichen@150 jedes = 1.5seconds. 
+i="0"			         //deklariert Variablen und setzt es auf 0 zum starten
+var temptitel=""                 //deklariert Variablen und setzt sie auf keinem Wert f&uuml;r jetzt.
+var geschwindigkeit="150"                  //der Abstand in Millisekunden zwischen den Buchstaben
+
+function titler(){
+if (!document.all&&!document.getElementById)
+return
+document.title=temptitel+nachricht.charAt(i)  //setzt den Anfangstitel
+temptitel=temptitel+nachricht.charAt(i)       //Erweitert den Titel um einen Buchstaben
+i++					    //Z&auml;hler wird erh&ouml;ht
+if(i==nachricht.length)			    //definiert das Ende des Titels
+{
+i="0"					    //setzt den Z&auml;hler am ende des Titels zur&uuml;ck
+temptitel=""				    //setzt den Titel auf ""
+}
+setTimeout("titler()",geschwindigkeit) 		   //Wiederholung. Diese Zeile entfernen, wenn der Titel nur einmal erscheinen soll.
+}
+
+window.onload=titler
+</script>
+</head>
+<body bgcolor="#000000" text="#FF0000" link="#FF0000" vlink="#FF0000" alink="#FF0000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div align="center"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="780" height="450">
+        <param name=movie value="intro.swf">
+        <param name=quality value=high>
+        <embed src="intro.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="780" height="450">
+        </embed> 
+      </object></div></td>
+  </tr>
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<center>
+<center>
+<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"
+ WIDTH=150 HEIGHT=40>
+ <PARAM NAME=movie VALUE="http://www.webmasterslive.de/services/flashcounter/shcounter_multi.swf?cgilocation=http://www.webmasterslive.de/services/cgi-bin/flashcounter/shcounter_multi.cgi&language=german&languageBase=http://www.webmasterslive.de/services/flashcounter/language&title=Flash Counter&id=Waechter&pauseTime=4"> 
+ <PARAM NAME=loop VALUE=false> 
+ <PARAM NAME=menu VALUE=false> 
+ <PARAM NAME=quality VALUE=high> 
+ <PARAM NAME=bgcolor VALUE=#oooooo> 
+ <EMBED src="http://www.webmasterslive.de/services/flashcounter/shcounter_multi.swf?cgilocation=http://www.webmasterslive.de/services/cgi-bin/flashcounter/shcounter_multi.cgi&language=german&languageBase=http://www.webmasterslive.de/services/flashcounter/language&title=Flash Counter&id=Waechter&pauseTime=4" 
+loop=false menu=false quality=high 
+bgcolor=#FFFFFF  
+WIDTH=150 HEIGHT=40 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">
+ </EMBED>
+</OBJECT>
+</center>
+  </tr>
+</table>
+</body>
+</html>
